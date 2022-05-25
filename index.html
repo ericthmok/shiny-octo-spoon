@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+    <section class="container"></section>
+    <section id="firstPage">
+        <h3>A quiz for all</h3>
+        <button id="startButton">Start it now</button>
+        <button id="firstPageScore" onclick="showTopScorers()">Top Scorers</button>
+    </section>
+    <section id="quiz">
+        <section id="timer">Time Remaining:</section>
+        <section id="questions">Questions Board</section>
+        <button id="a" onclick="goForAnswer('a')">A</button>
+        <button id="b" onclick="goForAnswer('b')">B</button>
+        <button id="c" onclick="goForAnswer('c')">C</button>
+        <button id="d" onclick="goForAnswer('d')">D</button>
+        <div id="result"></div>
+    </section>
+    <section id="endGame">
+        <div id="endScore"></div>
+        <input type="text" size="30" placeholder="Enter name for ranking" name="name" id="names"/>
+        <button id="submitName">Submit</button>
+    </section>
+    <section id="highScoreContainer">
+        <div id="highScore">
+            <h3>Name</h3>
+            <h3>Score</h3>
+        </div>
+        <div id="highScoreShowName"></div>
+        <div id="highScoreRank"></div>
+    </section>
+    <section id="endButton">
+        <button id="playAgain" onclick="replayQuiz">Play Again</button>
+        <button id="clearHighScore" onclick="clearData()">Clear Scores</button>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
